@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Task5</title>
-    <link rel="stylesheet" type="text/css" href="style5.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css">
+    <script src="script.java"></script>
     <style>
 
     .blueblock{
@@ -73,24 +73,19 @@
 </head>
 <body>
     <div class="blueblock">
-        <button class="button" onclick="LeftColumn()>
-            <div class="text">
-            Левая кнопка
-            </div>            
-        </button>
-        
-        <button class="button" onclick="MiddleColumn()>
-            <div class="text">
-            Средняя кнопка
-            </div>
-        </button>
-       
-        <button class="button" onclick="RightColumn()>
-            <div class="text">
-            Правая кнопка
-            </div>
-        </button>
-         <img src="cat.jpg" width="500px">
-         <div class="greenblock"></div>
+        <div class="button-container">
+            <button class="button" onclick="LeftColumn()"> Левая кнопка  </button>       
+            <button class="button" onclick="MiddleColumn()">Средняя кнопка </button>       
+            <button class="button" onclick="RightColumn()"> Правая кнопка </button>
+        </div>
+
+        <div class="left-image-container">
+            <img src="cat.jpg" alt="cat" class="left-image">
+        </div>
+
+        <div class="right-image-container">
+            <img src="dog.jpg" alt="dog" class="right-image">
+        </div>
+
     </div>
 </body>
