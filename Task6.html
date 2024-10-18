@@ -17,28 +17,17 @@
        width: 50%;
        margin: auto;
     }
-    .leftbutton{
-        display: inline-block;
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+    }
+    .button{
         background-color: red;
         height: 50px;
         width: 250px;
         border: 2px solid black;
-        border-right: 3px solid black;
         text-align: center;
-    }
-    .middlebutton{
-        display: inline-block;
-        background-color: red;
-        height: 50px;
-        width: 250px;
-    }
-    .rightbutton{
-        display: inline-block;
-        background-color: red;
-        height: 50px;
-        width: 250px;
-        border: 2px solid black;
-        border-left: 4px solid black;
     }
     .text{
         font-family: Arial;
@@ -54,29 +43,53 @@
         width: 20px;
         height: 340px;
     }
-    img{
+    .image-container{
+        display: flex;
+        flex-direction: row;
+        height:auto;
+        width: 99%;
+    }
+    .left-image-container{
+        background-color: blue;
         padding: 10px;
+        min-width: 30px;
+        text-align: left;
+    }
+    .right-image-container{
+        background-color: green;
+        padding: 10px;
+        min-width: 30px;
+        text-align: left;
+    }
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+        margin-bottom: 100px;
+        object-position: left top;
     }
     </style>
 </head>
 <body>
     <div class="blueblock">
-        <div class="leftbutton">
+        <button class="button" onclick="LeftColumn()>
             <div class="text">
             Левая кнопка
             </div>            
-        </div>
+        </button>
         
-        <div class="middlebutton">
+        <button class="button" onclick="MiddleColumn()>
             <div class="text">
-            Средняя кнопка</div>
+            Средняя кнопка
             </div>
+        </button>
        
-        <div class="rightbutton">
+        <button class="button" onclick="RightColumn()>
             <div class="text">
             Правая кнопка
             </div>
-         </div>
+        </button>
          <img src="cat.jpg" width="500px">
          <div class="greenblock"></div>
     </div>
