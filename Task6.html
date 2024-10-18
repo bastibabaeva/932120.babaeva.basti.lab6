@@ -7,15 +7,13 @@
     <script src="script.java"></script>
     <style>
 
-    .blueblock{
-        background-color: blue;
-        height: 400px;
-        width: auto;
-        top: 0px;
+    .main-container {
+        width: 50%;
     }
     body {
-       width: 50%;
-       margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
     .button-container {
         display: flex;
@@ -58,12 +56,12 @@
     .right-image-container{
         background-color: green;
         padding: 10px;
-        min-width: 30px;
+        min-width: 50px;
         text-align: left;
     }
     img {
         max-width: 100%;
-        width: 100%;
+        width: 90%;
         height: 400px;
         object-fit: contain;
         margin-bottom: 100px;
@@ -72,13 +70,14 @@
     </style>
 </head>
 <body>
-    <div class="blueblock">
+    <div class="main-container">
         <div class="button-container">
             <button class="button" onclick="LeftColumn()"> Левая кнопка  </button>       
             <button class="button" onclick="MiddleColumn()">Средняя кнопка </button>       
             <button class="button" onclick="RightColumn()"> Правая кнопка </button>
         </div>
 
+        <div class="image-container">
         <div class="left-image-container">
             <img src="cat.jpg" alt="cat" class="left-image">
         </div>
@@ -86,6 +85,7 @@
         <div class="right-image-container">
             <img src="dog.jpg" alt="dog" class="right-image">
         </div>
-
     </div>
+    </div>
+    
 </body>

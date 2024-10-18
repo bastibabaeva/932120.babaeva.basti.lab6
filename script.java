@@ -33,7 +33,7 @@ function RightColumn(){
     const rightContainer = document.querySelector('.right-image-container');
 
     rightImage.style.display="block";
-    leftImage.style.document="none";
+    leftImage.style.display="none";
     leftContainer.style.width="0%";
     rightContainer.style.width="100%";
 }
